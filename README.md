@@ -1,5 +1,5 @@
 # Hillsboro Web Studio
 
-Static website source for Hillsboro Web Studio. GitHub Pages publishes the root directory through the workflow in `.github/workflows/pages.yml`.
+Static website source for Hillsboro Web Studio. The site uses the studio's forest green and gold branding.
 
-The site uses the studio's green and gold logo and palette. To publish, push commits to `main`; the Pages workflow will deploy the update.
+GitHub Pages publishes the repository root from the `main` branch. The site is built with plain HTML and CSS and has no build step.
