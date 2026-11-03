@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
+  <title id="title">Hillsboro Web Studio logo</title>
+  <desc id="desc">A forest green circle with a cream H and golden cursor sparkle beside the Hillsboro Web Studio wordmark.</desc>
+  <circle cx="90" cy="90" r="78" fill="#34483A"/>
+  <circle cx="90" cy="90" r="69" fill="none" stroke="#D8B77A" stroke-width="2.5"/>
+  <path d="M61 49v82M119 49v82M61 89h58" fill="none" stroke="#FFF9EC" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M133 38v31l9-9 8 14 8-5-8-14 12-1z" fill="#E8B969" stroke="#34483A" stroke-width="4" stroke-linejoin="round"/>
+  <text x="195" y="88" fill="#34483A" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="-.9">Hillsboro</text>
+  <text x="198" y="128" fill="#687064" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="5.2">WEB STUDIO</text>
+</svg>
