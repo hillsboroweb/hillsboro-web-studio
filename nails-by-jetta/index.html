@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#19181e">
+  <meta name="description" content="Nail art, acrylic, Gel-X, structured and gel manicures at Nails by Jetta in Aloha, Oregon.">
+  <title>Nails by Jetta | Nail Art in Aloha, Oregon</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #19181e;
+      --paper: #f8f5f2;
+      --white: #fffdfa;
+      --muted: #5a515b;
+      --light-muted: #e2d9de;
+      --pink: #ff79bd;
+      --dark-pink: #891249;
+      --blue: #9bf5ec;
+      --line: #d7cbd2;
+      --edge: clamp(1.125rem, 5vw, 4.5rem);
+      --content: 72rem;
+      --sans: system-ui, -apple-system, sans-serif;
+      --display: "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; font: 1rem/1.58 var(--sans); color: var(--ink); background: var(--paper); }
+    h1, h2, h3, p, dl, dd, figure { margin: 0; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+    .wrap { width: min(calc(100% - 2 * var(--edge)), var(--content)); margin-inline: auto; }
+    .eyebrow { font-size: .73rem; font-weight: 790; letter-spacing: .13em; text-transform: uppercase; }
+    .disclosure { padding: .35rem var(--edge); background: var(--blue); color: var(--ink); text-align: center; font-size: .78rem; font-weight: 660; }
+    .skip { position: absolute; inset: .25rem auto auto 1rem; z-index: 2; padding: .55rem .8rem; background: var(--white); transform: translateY(-160%); }
+    .skip:focus { transform: none; }
+    .dark { background: var(--ink); color: var(--white); }
+    .mast { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; min-height: 69px; gap: 0 1rem; border-bottom: 1px solid #625861; }
+    .mark { font: 900 1.45rem/1 var(--display); text-transform: uppercase; letter-spacing: .01em; }
+    .nav { display: flex; gap: clamp(.8rem, 3.5vw, 2.1rem); }
+    .nav a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+    .nav a:hover { text-decoration: underline; text-underline-offset: .3em; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, .88fr); gap: clamp(2rem, 7vw, 6rem); align-items: center; padding-block: clamp(2.7rem, 6vw, 5.3rem); }
+    .hero-copy .eyebrow { color: var(--blue); }
+    h1, h2, h3 { font-family: var(--display); font-weight: 900; line-height: .95; }
+    h1 { margin-block: .19em .24em; font-size: clamp(4rem, 9.05vw, 8.2rem); letter-spacing: -.012em; text-transform: uppercase; }
+    h1 span { display: block; color: var(--pink); }
+    .intro { max-width: 32ch; color: var(--light-muted); font-size: clamp(1.03rem, 2.1vw, 1.26rem); }
+    .actions { display: flex; align-items: center; flex-wrap: wrap; gap: .55rem 1.25rem; margin-top: 1.35rem; }
+    .button { display: inline-flex; align-items: center; gap: .75rem; min-height: 47px; padding: .55rem 1rem; background: var(--pink); color: var(--ink); font-weight: 780; text-decoration: none; }
+    .button:hover { background: var(--blue); }
+    .button:focus-visible { outline-color: var(--blue); }
+    .plain-link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 650; text-underline-offset: .25em; }
+    .portfolio { width: 100%; max-width: 27rem; justify-self: end; border-top: 3px solid var(--pink); }
+    .portfolio .eyebrow { padding-block: .6rem; color: var(--blue); }
+    .post { container-type: inline-size; background: white; }
+    .post iframe { display: block; width: 100%; height: calc(187px + 106.82cqw); border: 0; pointer-events: none; }
+    .portfolio figcaption { margin-top: .65rem; color: var(--light-muted); font-size: .88rem; }
+    .services { display: grid; grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr); gap: clamp(1.65rem, 7vw, 6rem); padding-block: clamp(3rem, 7.8vw, 6.5rem); }
+    .services .eyebrow, .booking .eyebrow { color: var(--dark-pink); }
+    h2 { margin: .18em 0 .31em; font-size: clamp(3rem, 6vw, 5.4rem); letter-spacing: -.025em; text-transform: uppercase; }
+    .add-on { color: var(--muted); max-width: 29ch; }
+    .service-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); border-top: 1px solid var(--line); }
+    .service-row + .service-row { margin-top: 1.2rem; }
+    .service-row h3 { grid-column: 1 / -1; margin-block: .75rem .35rem; font: 760 .79rem/1.3 var(--sans); color: var(--dark-pink); letter-spacing: .11em; text-transform: uppercase; }
+    .service-row p { padding: .64rem .5rem .64rem 0; border-bottom: 1px solid var(--line); font-size: clamp(1.04rem, 2.35vw, 1.42rem); font-weight: 730; }
+    .booking { background: #f0e4e9; }
+    .booking-inner { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); gap: clamp(1.25rem, 7vw, 5.2rem); align-items: center; padding-block: clamp(2.8rem, 6vw, 5rem); }
+    .booking h2 { margin-bottom: 0; }
+    .booking p + p { margin-top: .63rem; }
+    .handle { color: var(--dark-pink); font-weight: 790; overflow-wrap: anywhere; }
+    .footer .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .3rem 1rem; padding-block: .6rem; }
+    .footer a { min-height: 44px; display: inline-flex; align-items: center; font-size: .9rem; text-underline-offset: .23em; }
+    @media (max-width: 44rem) {
+      .mast { min-height: 57px; }
+      .hero, .services, .booking-inner { grid-template-columns: 1fr; }
+      h1 { font-size: clamp(3.75rem, 14vw, 6.25rem); }
+      .portfolio { justify-self: start; }
+    }
+    @media (max-width: 24rem) {
+      .nav a { letter-spacing: .055em; }
+      .mark { font-size: 1.23rem; }
+      .mast { column-gap: .55rem; }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="disclosure">Unofficial website design</div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="dark">
+    <div class="wrap mast">
+      <p class="mark">Nails by Jetta</p>
+      <nav class="nav eyebrow" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="dark" aria-labelledby="hero-title">
+      <div class="wrap hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Nails by Jetta · Aloha, Oregon</p>
+          <h1 id="hero-title">Nail art <span>in full color.</span></h1>
+          <p class="intro">Acrylic, Gel-X and gel manicures, with custom designs for your set.</p>
+          <div class="actions">
+            <a class="button" href="#services">Explore services <span aria-hidden="true">↓</span></a>
+            <a class="plain-link" href="#booking">Booking inquiries</a>
+          </div>
+        </div>
+        <figure class="portfolio" id="work">
+          <p class="eyebrow">From Jetta’s portfolio</p>
+          <div class="post">
+            <iframe src="https://www.instagram.com/p/C7AuHXbJlmF/embed/" title="Nail art photographed by Nails by Jetta" inert tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer"></iframe>
+          </div>
+          <figcaption>Pointed nails in turquoise and pink, coral pink edged in green, and smoky cat-eye gray outlined in pink. Instagram · @_nailsbyjetta</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap services" id="services" aria-labelledby="services-title">
+      <div>
+        <p class="eyebrow">Services</p>
+        <h2 id="services-title">Choose your set</h2>
+        <p class="add-on">Nail art is an additional charge. Ask about pricing for the design you have in mind.</p>
+      </div>
+      <div>
+        <section class="service-row" aria-labelledby="extensions-title">
+          <h3 id="extensions-title">Nail sets</h3>
+          <p>Acrylic</p>
+          <p>Gel-X</p>
+        </section>
+        <section class="service-row" aria-labelledby="manicures-title">
+          <h3 id="manicures-title">Manicures</h3>
+          <p>Structured manicure</p>
+          <p>Gel manicure</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="booking" id="booking" aria-labelledby="booking-title">
+      <div class="wrap booking-inner">
+        <div>
+          <p class="eyebrow">Aloha, Oregon</p>
+          <h2 id="booking-title">Booking inquiries</h2>
+        </div>
+        <div>
+          <p>Message Jetta on Instagram at <strong class="handle">@_nailsbyjetta</strong> for availability and appointment details.</p>
+          <p>If you have a design in mind, share a reference and the service you’re considering.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer dark">
+    <div class="wrap">
+      <p class="mark">Nails by Jetta</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

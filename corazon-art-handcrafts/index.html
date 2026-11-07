@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#a72427">
+  <meta name="description" content="Corazón Art &amp; Handcrafts is a handmade art shop and workshop studio in downtown Beaverton, Oregon.">
+  <title>Corazón Art &amp; Handcrafts | Beaverton Art Studio and Shop</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f8edda;
+      --white: #fff8ea;
+      --red: #a72427;
+      --deep: #741a20;
+      --ink: #2c231f;
+      --muted: #5b473e;
+      --rule: #c6a891;
+      --edge: clamp(1.125rem, 5vw, 4.4rem);
+      --content: 70rem;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: system-ui, -apple-system, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.6 var(--sans); }
+    h1, h2, h3, p, ul, figure { margin: 0; }
+    ul { padding: 0; list-style: none; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+    .wrap { width: min(calc(100% - 2 * var(--edge)), var(--content)); margin-inline: auto; }
+    .caps { font-size: .74rem; font-weight: 760; letter-spacing: .115em; text-transform: uppercase; }
+    .disclosure { padding: .35rem var(--edge); background: var(--deep); color: var(--white); text-align: center; font-size: .78rem; font-weight: 650; }
+    .skip { position: absolute; inset: .25rem auto auto 1rem; z-index: 2; padding: .55rem .8rem; background: var(--white); transform: translateY(-160%); }
+    .skip:focus { transform: none; }
+    .mast { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; min-height: 68px; gap: 0 .9rem; }
+    .mark { color: var(--deep); font-weight: 770; }
+    .nav { display: flex; flex-wrap: wrap; gap: 0 clamp(.75rem, 3.6vw, 2.1rem); }
+    .nav a { min-height: 44px; display: inline-flex; align-items: center; text-decoration: none; }
+    .nav a:hover { text-decoration: underline; text-underline-offset: .25em; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.28fr) minmax(0, 1fr); border: 1px solid var(--red); margin-bottom: clamp(2.8rem, 7vw, 6.5rem); }
+    .hero-title { display: grid; align-content: center; background: var(--red); color: var(--white); padding: clamp(1.35rem, 4.65vw, 4.3rem); }
+    .hero-title .caps { margin-bottom: .8rem; }
+    h1, h2 { font: 400 1rem/1 var(--serif); letter-spacing: -.058em; }
+    h1 { font-size: clamp(3.1rem, 8.25vw, 7.65rem); }
+    h1 span { display: block; margin-top: .52rem; font: 700 clamp(.9rem, 2.05vw, 1.4rem)/1.26 var(--sans); letter-spacing: .035em; }
+    h1 .name-word { display: inline; font: inherit; letter-spacing: inherit; }
+    .hero-content { display: grid; justify-items: start; align-content: center; padding: clamp(1.35rem, 4.1vw, 4.2rem); }
+    .hero-content .caps, .label { color: var(--deep); }
+    .tagline { max-width: 29ch; margin-top: .4rem; font: 400 clamp(1.5rem, 2.75vw, 2.45rem)/1.12 var(--serif); letter-spacing: -.035em; }
+    .intro { max-width: 35ch; margin-top: .8rem; color: var(--muted); }
+    .button { min-height: 46px; display: inline-flex; align-items: center; gap: .65rem; margin-top: 1.23rem; padding: .54rem .9rem; color: var(--white); background: var(--deep); font-weight: 760; text-decoration: none; }
+    .button:hover { background: var(--ink); }
+
+    .workshops { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: clamp(1.5rem, 6.2vw, 5.2rem); align-items: start; padding-bottom: clamp(3rem, 6.8vw, 6rem); }
+    h2 { font-size: clamp(2.8rem, 6vw, 5.3rem); margin: .2em 0 .28em; }
+    .workshops .copy { max-width: 38ch; color: var(--muted); }
+    .class-list li { display: grid; grid-template-columns: 2.15rem minmax(0, 1fr); gap: .55rem; align-items: baseline; border-top: 1px solid var(--rule); padding: .7rem .2rem; font: 400 clamp(1.15rem, 2.2vw, 1.6rem)/1.25 var(--serif); }
+    .class-list li:last-child { border-bottom: 1px solid var(--rule); }
+    .class-list span { font-family: var(--sans); }
+    .workshops .plain-link { margin-top: .65rem; }
+    .plain-link { min-height: 44px; display: inline-flex; align-items: center; color: var(--deep); font-weight: 740; text-underline-offset: .23em; }
+
+    .showcase { background: var(--white); border-block: 1px solid var(--rule); }
+    .showcase-inner { display: grid; grid-template-columns: minmax(0, .87fr) minmax(0, 1.13fr); gap: clamp(1.6rem, 9vw, 7rem); align-items: center; padding-block: clamp(2.7rem, 6.5vw, 5.8rem); }
+    .showcase figure { max-width: 25rem; border-top: 3px solid var(--red); }
+    .post { container-type: inline-size; background: white; }
+    .post iframe { display: block; width: 100%; height: calc(211px + 125cqw); border: 0; pointer-events: none; }
+    figcaption { padding-top: .65rem; color: var(--muted); font-size: .88rem; }
+    .gallery-copy p:last-child { max-width: 32ch; color: var(--muted); }
+    .visit { background: var(--red); color: var(--white); }
+    .visit-inner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); gap: clamp(1.55rem, 7vw, 6rem); align-items: end; padding-block: clamp(2.8rem, 6.4vw, 5.5rem); }
+    .visit address { font: inherit; }
+    .studio-contact { border-top: 1px solid #e4b4a0; padding-top: .72rem; }
+    .studio-contact h3 { margin-bottom: .45rem; font-size: 1.16rem; }
+    .studio-contact p + p { margin-top: .5rem; }
+    .footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .15rem 1rem; padding-block: .6rem; }
+    .footer a { min-height: 44px; display: inline-flex; align-items: center; font-size: .9rem; text-underline-offset: .23em; }
+    @media (max-width: 45rem) {
+      .mast { min-height: 57px; }
+      .hero, .workshops, .showcase-inner, .visit-inner { grid-template-columns: 1fr; }
+      .hero-title { padding-block: 2.2rem; }
+      h1 { font-size: clamp(3.55rem, 13vw, 5.6rem); }
+      .showcase figure { order: 1; width: 100%; }
+    }
+    @media (max-width: 32rem) {
+      .mast { padding-top: .4rem; }
+      .mast .mark { flex-basis: 100%; }
+      .nav a { letter-spacing: .075em; }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="disclosure">Unofficial website design</div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap mast">
+    <p class="mark caps">Studio &amp; shop · Beaverton</p>
+    <nav class="nav caps" aria-label="Main navigation">
+      <a href="#workshops">Workshops</a>
+      <a href="#studio-work">Studio work</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="wrap hero" aria-labelledby="studio-name">
+      <div class="hero-title">
+        <p class="caps" lang="es">Arte hecho a mano</p>
+        <h1 id="studio-name"><span class="name-word" lang="es">Corazón</span> <span>Art &amp; Handcrafts</span></h1>
+      </div>
+      <div class="hero-content">
+        <p class="caps">Downtown Beaverton, Oregon</p>
+        <p class="tagline">Handmade art and room to create.</p>
+        <p class="intro">Discover handcrafts and workshops at the studio on SW 2nd Street.</p>
+        <a class="button" href="#workshops">Explore workshops <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="wrap workshops" id="workshops" aria-labelledby="workshop-title">
+      <div>
+        <p class="caps label" lang="es">Talleres</p>
+        <h2 id="workshop-title">Workshops</h2>
+        <p class="copy">Explore hands-on art workshops and studio courses. Past workshops have included clay and printmaking projects.</p>
+        <a class="plain-link" href="#visit">Class registration information</a>
+      </div>
+      <ul class="class-list" aria-label="Past workshop examples">
+        <li><span class="caps label" aria-hidden="true">01</span> Clay painting</li>
+        <li><span class="caps label" aria-hidden="true">02</span> Linocut printing</li>
+        <li><span class="caps label" aria-hidden="true">03</span> Bilingual clay axolotl workshop</li>
+      </ul>
+    </section>
+
+    <section class="showcase" id="studio-work" aria-labelledby="work-title">
+      <div class="wrap showcase-inner">
+        <figure>
+          <div class="post">
+            <iframe src="https://www.instagram.com/reel/DfP8tOAv8MX/embed/" title="Día de Muertos artwork from Corazón Art and Handcrafts" inert tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer" loading="lazy"></iframe>
+          </div>
+          <figcaption><span lang="es">Día de Muertos</span> artwork from Corazón. Instagram · @corazonhandcraft</figcaption>
+        </figure>
+        <div class="gallery-copy">
+          <p class="caps label" lang="es">Desde el estudio</p>
+          <h2 id="work-title">From the studio</h2>
+          <p>Corazón’s handmade pieces draw on multicultural influences. Visit the studio shop to see the work in person.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="wrap visit-inner">
+        <div>
+          <p class="caps" lang="es">Visítanos</p>
+          <h2 id="visit-title">Visit the studio</h2>
+          <address>12595 SW 2nd St<br>Beaverton, Oregon</address>
+        </div>
+        <div class="studio-contact">
+          <h3>Classes, events &amp; questions</h3>
+          <p>Find the workshop catalog, course registration and event information on Linktree under <strong>corazonhandcraft</strong>.</p>
+          <p>Instagram · <strong>@corazonhandcraft</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="mark">Corazón Art &amp; Handcrafts</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
