@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f6eddf">
+  <meta name="description" content="Browse antiques, vintage finds and local art at Dee’s Divine Finds in downtown Hillsboro, Oregon.">
+  <title>Dee’s Divine Finds | Antiques and Local Art in Hillsboro</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6eddf;
+      --white: #fffbf3;
+      --ink: #302720;
+      --muted: #624e42;
+      --olive: #46513a;
+      --leaf: #dddcc7;
+      --light-ink: #eeead9;
+      --line: #c5b4a1;
+      --content: 70rem;
+      --edge: clamp(1.125rem, 5vw, 4.25rem);
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: system-ui, -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.6 var(--sans); }
+    h1, h2, p, ul, dl, dd { margin: 0; }
+    ul { list-style: none; padding: 0; }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+    .wrap { width: min(calc(100% - 2 * var(--edge)), var(--content)); margin-inline: auto; }
+    .eyebrow { font-size: .74rem; font-weight: 740; letter-spacing: .125em; text-transform: uppercase; }
+    .disclosure { padding: .34rem var(--edge); color: var(--white); background: var(--olive); text-align: center; font-size: .8rem; font-weight: 620; }
+    .skip { position: absolute; inset: .25rem auto auto 1rem; padding: .6rem .8rem; background: var(--white); color: var(--ink); transform: translateY(-160%); }
+    .skip:focus { transform: none; }
+    .mast { min-height: 74px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0 1.1rem; border-bottom: 1px solid var(--line); }
+    .mast .location { color: var(--muted); }
+    .site-nav { display: flex; gap: clamp(.8rem, 3.4vw, 2.1rem); }
+    .site-nav a { display: flex; align-items: center; min-height: 44px; text-decoration: none; }
+    .site-nav a:hover { text-decoration: underline; text-underline-offset: .3em; }
+
+    .hero { padding-block: clamp(2.9rem, 8vw, 7.35rem) clamp(2.9rem, 6.3vw, 5.8rem); text-align: center; }
+    .hero > .eyebrow { color: var(--olive); }
+    h1, h2 { font: 400 1rem/1 var(--serif); letter-spacing: -.05em; }
+    h1 { margin: .19em 0 .21em; font-size: clamp(3.05rem, 8.7vw, 8rem); }
+    .hero-copy { max-width: 36ch; margin-inline: auto; color: var(--muted); font-size: clamp(1.07rem, 2.2vw, 1.3rem); }
+    .visit-link { display: inline-flex; justify-content: center; align-items: center; gap: .65rem; min-height: 47px; margin-top: 1.3rem; padding: .5rem 1.05rem; border: 1px solid var(--olive); color: var(--olive); text-decoration: none; font-weight: 740; }
+    .visit-link:hover { background: var(--leaf); }
+
+    .spread { background: var(--white); border-block: 1px solid var(--line); }
+    .spread-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); }
+    .shelf, .gallery { padding-block: clamp(2.45rem, 5.8vw, 5rem); }
+    .shelf { padding-right: clamp(1.5rem, 5.6vw, 4.8rem); }
+    .gallery { display: grid; align-content: center; padding-left: clamp(1.5rem, 5.6vw, 4.8rem); border-left: 1px solid var(--line); }
+    .spread .eyebrow { color: var(--olive); }
+    h2 { margin: .18em 0 .42em; font-size: clamp(2.25rem, 5.2vw, 4.35rem); }
+    .categories { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 .95rem; }
+    .categories li { padding: .52rem 0; border-top: 1px solid var(--line); font-weight: 650; }
+    .gallery p:last-child { max-width: 33ch; color: var(--muted); }
+    .visit { padding-block: clamp(2.5rem, 6vw, 5.35rem); background: var(--olive); color: var(--white); }
+    .visit-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .92fr); gap: clamp(1.5rem, 7vw, 6rem); align-items: end; }
+    .visit .eyebrow { color: var(--light-ink); }
+    .visit address { font: inherit; }
+    .details { border-top: 1px solid #a3aa94; }
+    .details div { display: grid; grid-template-columns: minmax(5.25rem, .42fr) minmax(0, 1fr); gap: .18rem .65rem; padding: .64rem 0; border-bottom: 1px solid #a3aa94; }
+    .details dd { overflow-wrap: anywhere; }
+    .contact-note { margin-top: .75rem; color: var(--light-ink); font-size: .92rem; }
+    .footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .25rem 1rem; padding-block: .63rem; }
+    .footer p { font: 400 1.22rem/1.2 var(--serif); }
+    .footer a { display: inline-flex; align-items: center; min-height: 44px; font-size: .87rem; text-underline-offset: .22em; }
+
+    @media (max-width: 43rem) {
+      .mast { min-height: 60px; }
+      .mast .location { letter-spacing: .06em; }
+      .site-nav a { letter-spacing: .07em; }
+      .spread-grid, .visit-grid { grid-template-columns: 1fr; }
+      .shelf { padding-right: 0; }
+      .gallery { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
+    }
+
+    @media (max-width: 29rem) {
+      .mast { justify-content: center; column-gap: 1.25rem; padding-top: .45rem; }
+      .mast .location { flex-basis: 100%; text-align: center; }
+      .hero h1 { max-width: 10ch; margin-inline: auto; font-size: clamp(3.1rem, 12vw, 4.2rem); }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="disclosure">Unofficial website design</div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap mast">
+    <p class="location eyebrow">Downtown Hillsboro, Oregon</p>
+    <nav class="site-nav eyebrow" aria-label="Main navigation">
+      <a href="#shop">The shop</a>
+      <a href="#gallery">The gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="wrap hero" aria-labelledby="shop-name">
+      <p class="eyebrow">Vintage finds &amp; local art</p>
+      <h1 id="shop-name">Dee’s Divine Finds</h1>
+      <p class="hero-copy">Browse antiques, furniture and vintage goods alongside a gallery for local artists.</p>
+      <a class="visit-link" href="#visit">Find the shop <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <div class="spread">
+      <div class="wrap spread-grid">
+        <section class="shelf" id="shop" aria-labelledby="shelf-title">
+          <p class="eyebrow">The shop</p>
+          <h2 id="shelf-title">Browse the finds</h2>
+          <ul class="categories">
+            <li>Antiques</li>
+            <li>Furniture</li>
+            <li>Vintage goods</li>
+            <li>Unusual finds</li>
+          </ul>
+        </section>
+        <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+          <p class="eyebrow">The gallery at Dee’s</p>
+          <h2 id="gallery-title">Local art</h2>
+          <p>The gallery has hosted exhibitions by local artists and taken part in the Hillsboro Art Walk. Call the shop to ask what’s on view.</p>
+        </section>
+      </div>
+    </div>
+
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="wrap visit-grid">
+        <div>
+          <p class="eyebrow">Visit in person</p>
+          <h2 id="visit-title">Find us on Third</h2>
+          <address>176 NE 3rd Street<br>Hillsboro, OR 97123</address>
+        </div>
+        <div>
+          <dl class="details">
+            <div><dt class="eyebrow">Phone</dt><dd>541-921-0123</dd></div>
+            <div><dt class="eyebrow">Instagram</dt><dd>@deesdivinefinds</dd></div>
+          </dl>
+          <p class="contact-note">Call ahead for current shop hours.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Dee’s Divine Finds</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
