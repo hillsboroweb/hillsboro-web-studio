@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Texas-style barbecue in Aloha, Oregon. Explore the smoked meats, plates and sides at SLAB SZN BBQ and find the weekend cart hours.">
+  <meta name="theme-color" content="#211b17">
+  <title>SLAB SZN BBQ | Texas-Style BBQ in Aloha, Oregon</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --coal: #211b17;
+      --paper: #f8eddb;
+      --oat: #efe0ca;
+      --ember: #ff9864;
+      --rust: #8f301a;
+      --muted: #695247;
+      --faint: #ceb9a2;
+      --dark-line: #6b5244;
+      --light-muted: #d6c2b0;
+      --display: "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
+      --body: system-ui, -apple-system, sans-serif;
+      --content: 72rem;
+      --edge: clamp(1.125rem, 5vw, 4.5rem);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; color: var(--coal); background: var(--paper); font: 1rem/1.55 var(--body); }
+    h1, h2, h3, p, ul, dl, dd, figure { margin: 0; }
+    ul { list-style: none; padding: 0; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+    .wrap { width: min(calc(100% - 2 * var(--edge)), var(--content)); margin-inline: auto; }
+    .small { font-size: .75rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+    .disclosure { padding: .4rem var(--edge); background: var(--ember); color: var(--coal); font-size: .78rem; text-align: center; font-weight: 650; }
+    .skip { position: absolute; z-index: 2; inset: .25rem auto auto 1rem; padding: .55rem .8rem; background: var(--paper); color: var(--coal); transform: translateY(-160%); }
+    .skip:focus { transform: none; }
+    .dark { color: var(--paper); background: var(--coal); }
+    .mast { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 1rem; padding-block: .8rem; border-bottom: 1px solid var(--dark-line); }
+    .name { font: 900 1.6rem/1 var(--display); letter-spacing: .01em; }
+    .nav { display: flex; gap: clamp(.85rem, 3vw, 2.1rem); }
+    .nav a { display: grid; align-items: center; min-height: 44px; text-underline-offset: .3em; text-decoration: none; }
+    .nav a:hover { text-decoration: underline; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(16rem, .78fr); gap: clamp(2.6rem, 6vw, 6rem); align-items: end; padding-block: clamp(3.5rem, 7vw, 7rem); }
+    .hero .small, .hours .small, .visit .small { color: var(--ember); }
+    h1, h2, .bowl h3, .hours h2 { font-family: var(--display); font-weight: 900; text-transform: uppercase; }
+    h1 { max-width: 100%; margin-block: .22em .18em; font-size: clamp(3.55rem, 7.4vw, 7rem); line-height: .9; letter-spacing: -.01em; }
+    h1 span { color: var(--ember); }
+    .intro { max-width: 33ch; color: var(--light-muted); font-size: clamp(1.06rem, 1.7vw, 1.28rem); }
+    .button { display: inline-flex; align-items: center; gap: .9rem; min-height: 48px; margin-top: 1.6rem; padding: .65rem 1.15rem; background: var(--ember); color: var(--coal); font-weight: 800; text-decoration: none; }
+    .button:hover { background: var(--paper); }
+    .button:focus-visible { outline-color: var(--paper); }
+    .hours { padding: 1.05rem 0 .5rem; border-top: 3px solid var(--ember); }
+    .hours h2 { margin: .27em 0 .5em; font-size: clamp(2.3rem, 4vw, 3.45rem); line-height: .96; }
+    .hours dl > div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem .75rem; border-top: 1px solid var(--dark-line); padding-block: .62rem; }
+    .hours dt { font-weight: 750; }
+    .hours dd { color: var(--light-muted); font-variant-numeric: tabular-nums; }
+    .hours .cart-label { margin-top: .75rem; color: var(--light-muted); }
+    .menu { padding-block: clamp(3rem, 6vw, 6rem); }
+    .section-heading { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: .75rem 2rem; border-bottom: 2px solid var(--coal); padding-bottom: 1rem; }
+    .section-heading .small { color: var(--rust); }
+    .section-heading h2, .visit h2 { font-size: clamp(2.9rem, 6vw, 5rem); letter-spacing: -.02em; line-height: .95; }
+    .section-heading p:last-child { max-width: 28ch; color: var(--muted); }
+    .plate-board { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); margin-block: 1.5rem 2.6rem; background: var(--oat); }
+    .plates, .bowl { padding: clamp(1.1rem, 3vw, 2rem); }
+    .plates h3 { margin-block: .3rem .75rem; font: 850 2rem/1 var(--display); }
+    .plates dl > div { border-top: 1px solid var(--faint); padding: .7rem 0; }
+    .plates dl > div:last-child { padding-bottom: 0; }
+    .plates dt { font-weight: 800; }
+    .plates dd { color: var(--muted); }
+    .bowl { display: grid; align-content: center; background: var(--rust); color: var(--paper); }
+    .bowl h3 { margin-block: .3em; font-size: clamp(2.25rem, 4vw, 3.5rem); line-height: .93; }
+    .bowl p:last-child { max-width: 33ch; }
+    .menu-groups { display: grid; grid-template-columns: 1fr 1.05fr .8fr; gap: clamp(1.8rem, 5vw, 4.5rem); }
+    .menu-group { min-width: 0; border-top: 2px solid var(--coal); padding-top: .75rem; }
+    .menu-group h3 { margin: 0 0 .52rem; font: 850 1.8rem/1 var(--display); }
+    .menu-group li { padding: .47rem 0; border-bottom: 1px solid var(--faint); font-weight: 550; }
+    .visit { padding-block: clamp(2.75rem, 6vw, 5rem); }
+    .visit-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: start; gap: clamp(1.8rem, 6vw, 5rem); }
+    .visit h2 { margin: .2em 0 .35em; }
+    .visit address { font: inherit; color: var(--light-muted); }
+    .visit address strong { display: block; color: var(--paper); }
+    .order { padding-top: .7rem; border-top: 1px solid var(--dark-line); }
+    .order h3 { font: 850 1.85rem/1 var(--display); margin: 0 0 .5rem; }
+    .order p { max-width: 40ch; color: var(--light-muted); }
+    .order p + p { margin-top: .55rem; }
+    .order strong { color: var(--paper); }
+    .footer { border-top: 1px solid var(--dark-line); padding-block: .85rem; }
+    .footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .25rem 1.25rem; }
+    .footer p { font-weight: 750; }
+    .footer a { display: inline-flex; align-items: center; min-height: 44px; font-size: .9rem; text-underline-offset: .25em; }
+
+    @media (max-width: 45rem) {
+      .hero, .section-heading, .plate-board, .menu-groups, .visit-grid { grid-template-columns: 1fr; }
+      .hero { gap: 2.55rem; align-items: start; }
+      .hero h1 { font-size: clamp(3.25rem, 12.6vw, 5.75rem); }
+      .hours { max-width: 29rem; }
+      .section-heading { align-items: start; }
+      .section-heading p:last-child { max-width: 32ch; }
+    }
+    @media (max-width: 35rem) {
+      .mast { column-gap: .65rem; }
+      .nav { gap: .85rem; }
+      .nav a { font-size: .7rem; }
+      .name { font-size: 1.38rem; }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="disclosure">Unofficial website design</div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="dark">
+    <div class="wrap mast">
+      <p class="name">SLAB SZN BBQ</p>
+      <nav class="nav small" aria-label="Main navigation">
+        <a href="#menu">Menu</a>
+        <a href="#visit">Find the cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="dark" aria-labelledby="hero-title">
+      <div class="wrap hero">
+        <div>
+          <p class="small">Texas-style BBQ · Aloha, Oregon</p>
+          <h1 id="hero-title">Low <span>&amp; slow.</span></h1>
+          <p class="intro">Smoked brisket, spare ribs and pulled pork with Southern-style sides.</p>
+          <a class="button" href="#menu">See the BBQ menu <span aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="hours" aria-labelledby="hours-title">
+          <p class="small">Friday through Sunday</p>
+          <h2 id="hours-title">Cart hours</h2>
+          <dl>
+            <div><dt>Friday</dt><dd>Noon–7 p.m.</dd></div>
+            <div><dt>Saturday</dt><dd>1–7 p.m.</dd></div>
+            <div><dt>Sunday</dt><dd>1–5 p.m.</dd></div>
+          </dl>
+          <p class="cart-label">At Aloha Food Carts</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap menu" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <div>
+          <p class="small">SLAB SZN BBQ</p>
+          <h2 id="menu-title">The BBQ menu</h2>
+        </div>
+        <p>Smoked meats by themselves or as a plate with two sides and honey butter cornbread.</p>
+      </div>
+      <div class="plate-board">
+        <section class="plates" aria-labelledby="plates-title">
+          <h3 id="plates-title">Barbecue plates</h3>
+          <dl>
+            <div><dt>One Meat Plate</dt><dd>Choose one smoked meat and two sides.</dd></div>
+            <div><dt>Two Meat Plate</dt><dd>Choose two smoked meats and two sides.</dd></div>
+          </dl>
+        </section>
+        <section class="bowl" aria-labelledby="bowl-title">
+          <h3 id="bowl-title">Loaded Mac &amp; Cheese Bowl</h3>
+          <p>Mac and cheese topped with pulled pork and barbecue sauce.</p>
+        </section>
+      </div>
+      <div class="menu-groups">
+        <section class="menu-group" aria-labelledby="meats-title">
+          <h3 id="meats-title">Smoked meats</h3>
+          <ul>
+            <li>Prime Brisket</li>
+            <li>Pork Spare Ribs</li>
+            <li>Smoked Pork Belly Burnt Ends</li>
+            <li>Pulled Pork</li>
+          </ul>
+        </section>
+        <section class="menu-group" aria-labelledby="sides-title">
+          <h3 id="sides-title">Sides</h3>
+          <ul>
+            <li>Baked Mac &amp; Cheese</li>
+            <li>Collard Greens</li>
+            <li>BBQ Beans</li>
+            <li>Candied Yams</li>
+            <li>Honey Butter Cornbread</li>
+          </ul>
+        </section>
+        <section class="menu-group" aria-labelledby="sweets-title">
+          <h3 id="sweets-title">Dessert &amp; drinks</h3>
+          <ul>
+            <li>Banana Pudding</li>
+            <li>Sweet Potato Pie</li>
+            <li>Fresh Lemonade</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="dark visit" id="visit" aria-labelledby="visit-title">
+      <div class="wrap visit-grid">
+        <div>
+          <p class="small">Aloha, Oregon</p>
+          <h2 id="visit-title">Find the cart</h2>
+          <address>
+            <strong>Aloha Food Carts</strong>
+            20001 SW Tualatin Valley Hwy<br>
+            Aloha, OR 97003
+          </address>
+        </div>
+        <section class="order" aria-labelledby="order-title">
+          <h3 id="order-title">Preorders &amp; delivery</h3>
+          <p>Look for <strong>SLAB SZN BBQ</strong> on Hotplate for preorders or on DoorDash for delivery.</p>
+          <p>Find cart updates on Instagram at <strong>@slabsznbbq</strong>.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="dark footer">
+    <div class="wrap">
+      <p>SLAB SZN BBQ</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
