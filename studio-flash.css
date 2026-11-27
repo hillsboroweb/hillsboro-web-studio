@@ -1,0 +1,108 @@
+.hero{background:radial-gradient(ellipse at 82% 100%,#68378f 0%,#372052 31%,transparent 73%)}
+.hero-aurora{opacity:1;inset:0 0 0 12%;filter:saturate(1.6)}
+.hero-aurora-bars{gap:4px}
+.hero-aurora-bar{background:linear-gradient(180deg,transparent,#ffd0bd88 40%,#d38affbb 70%,#56336e);box-shadow:0 0 20px #e3aaff44}
+.hero-copy{text-shadow:0 2px 26px #170d25}
+.hero h1 em{color:#ffd2bd;text-shadow:0 0 45px #ffae9266}
+.hero .pill,.contact .pill{box-shadow:0 0 34px #ffb18d60}
+.light{background:linear-gradient(120deg,#fff9f5,#ebdcf6)}
+.offer article{position:relative;isolation:isolate;overflow:hidden}
+.offer article::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(130deg,transparent 35%,#ffd2b9 50%,transparent 65%);transform:translateX(-110%);transition:transform .6s}
+.offer article:hover::before,.offer article:focus-within::before{transform:translateX(110%)}
+.reserved-preview{outline:1px solid #e7abff55;outline-offset:6px;box-shadow:0 0 44px #c788ff33}
+.flyers{background:radial-gradient(ellipse at 20% 45%,#754b91,#302044 64%)}
+.flyer-art{box-shadow:10px 10px #b47bb5,20px 20px #181326;transition:transform .3s}
+.flyer-art:hover{transform:perspective(850px) rotateY(-12deg) rotate(2deg)}
+#process li::marker{color:var(--lime);font-weight:700}
+#faq details[open]{background:#edc0ff60;padding-inline:12px;border-radius:10px}
+.contact{background:radial-gradient(ellipse at 90% 100%,#683681,transparent 65%),#1c122b}
+[data-arrived]{animation:arrive .64s cubic-bezier(.2,.7,.2,1) both}
+@keyframes arrive{from{opacity:.35;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){
+ [data-arrived]{animation:none}
+ .offer article::before{display:none}
+ .flyer-art{transition:none}
+ .flyer-art:hover{transform:rotate(-3deg)}
+}
+
+/* Monochrome with cobalt as a spot color. */
+:root{--forest:#171717;--lime:#8babff;--paper:#faf9f5;--line:#ffffff35}
+.hero{background:#171717}
+.hero-aurora{opacity:.65;filter:none}
+.hero-aurora-bar{background:linear-gradient(180deg,transparent,#ffffff33 55%,#656565);box-shadow:none;border-radius:2px 2px 0 0}
+.hero-copy{text-shadow:none}
+.hero h1 em{color:var(--lime);text-shadow:none}
+.hero-copy>p:not(.label),footer{color:#dedede}
+.hero .pill,.contact .pill{box-shadow:none}
+.pill:hover{background:#234dce}
+.outline:hover{color:var(--forest)}
+nav a:hover{background:#719bff28}
+.light{background:var(--paper)}
+.offer article{border-color:#17171738;border-radius:10px}
+.offer article::before{background:linear-gradient(130deg,transparent 35%,#3668ef21 50%,transparent 65%)}
+.reserved-preview{color:#faf9f5;background:repeating-linear-gradient(90deg,#ffffff20 0 1px,transparent 1px 25px),#272727;outline-color:#ffffff40;box-shadow:none}
+.flyers{background:#272727}
+.flyer-art{box-shadow:10px 10px #b7b7b7,20px 20px #101010}
+#faq details[open]{background:#3668ef17}
+.contact{background:#101010}
+
+.hero h1 em{color:var(--paper)}
+.hero .label{color:var(--lime)}
+
+.pill,.flyer-art{background:#2e55cf;color:#fff}
+.pill:hover{background:#2345ad}
+.outline{background:transparent;color:inherit}
+.outline:hover{background:#8babff;color:#171717}
+.flyer-art{box-shadow:10px 10px #a7baf3,20px 20px #101010}
+#process li::marker{color:#8babff}
+
+.glass-header{display:block;position:relative;background:#171717}
+.glass-header header{position:relative}
+.glass-header nav a[glass]{--glass-tint:rgba(70,108,255,.18);--glass-frost:.35}
+@media(prefers-reduced-motion:reduce){.glass-header nav a[glass]{--glass-pull:0;--glass-press:1}}
+
+.glass-cta-scene{display:block;position:relative}
+.glass-cta-scene > .wrap{position:relative}
+.glass-cta-scene .pill[glass]{color:var(--paper);background:transparent;border:1px solid #a9d6ff65;box-shadow:none;--glass-tint:rgba(60,101,216,.48);--glass-frost:.35}
+.glass-cta-scene .pill[glass]:hover{border-color:#d6eaff}
+.glass-cta-scene:not(:defined) .pill[glass]{background:#263d72}
+@media(prefers-reduced-motion:reduce){.glass-cta-scene .pill[glass]{--glass-pull:0;--glass-press:1}}
+
+/* Let the single glass backdrop flow behind the header and hero. */
+.glass-header > .hero{border-top:0;background:transparent}
+.glass-header nav a[glass]{--glass-tint:rgba(70,108,255,.18);--glass-frost:.35}
+
+/* Blue water above, one pixel current behind the lower sections. */
+body{background:linear-gradient(180deg,#10162b,#1b2231 45%,#191b21)}
+.glass-header,#studio.light{background:transparent}
+.glass-header{--hero-fade:clamp(60px,9vw,128px)}
+.glass-header .hero-aurora{
+ mask-image:linear-gradient(to right,transparent,#000 35%),
+            linear-gradient(to bottom,#000 calc(100% - var(--hero-fade)),transparent);
+ mask-composite:intersect;
+}
+.glass-header::part(canvas),.glass-header::part(fallback){
+ mask-image:linear-gradient(to bottom,#000 calc(100% - var(--hero-fade)),transparent)
+}
+#studio.light{color:var(--paper)}
+#studio .offer article{background:#e7edff0a;border-color:#c4d6ff28}
+#studio .offer article p{color:#d6dfef}
+.lower-page{
+ color:var(--paper);
+ background:transparent;
+}
+.lower-page:not(:defined){
+ background:center / cover no-repeat url("studio-pixel-current.png");
+}
+.lower-page::part(canvas),.lower-page::part(fallback){
+ mask-image:linear-gradient(transparent,#000 7%,#000 95%,transparent)
+}
+.lower-page .flyers,.lower-page .contact,.lower-page #faq{
+ color:inherit;
+ background:transparent;
+}
+.lower-page #faq details{border-color:#ffffff30}
+.lower-page #faq details[open]{background:#ffffff0c}
+.lower-page .pill[glass]{--glass-tint:rgba(60,101,216,.53)}
+#contact .section{padding-top:clamp(36px,7vw,80px)}
+footer.wrap{border:0}
